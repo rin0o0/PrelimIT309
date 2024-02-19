@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    background: #111222;
+    min-height: 200vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px; 
+}
+
+.sticky{ 
+    padding: 40px 100px;
+    background-color: rgba(138, 98, 71, 1);
+}
+
+.sticky .logo,
+.sticky ul li a{ 
+    color: #dadada;
+    
+}
+
+header .logo{ 
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{ 
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{ 
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff; 
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+}
+
+
+
+/* =================================================== 
+                        H O M E 
+===================================================== */
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.main-title{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.content{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image{ 
+    position: relative;
+    width: 700px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.content .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content .text-box{
+    z-index: 222;
+    background: rgba(36, 36, 36, 0.3);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 500px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    transform: translate(-80px,50px);
+}
+
+.content .text-box h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.media-icons{
+    margin-top: 100px;
+}
+
+.media-icons a{
+    color: #fff;
+    font-size: 2em;
+    margin: 60px;
+} 
+
+/* =================================================== 
+                    A B O U T 
+===================================================== */
+.section-title{
+    font-size: 3em;
+    margin-bottom: 80px;
+}
+.info-title{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+.info{
+    width: 400px;
+    margin-left: 50px;
+}
+
+
+/* =================================================== 
+                    P R O D U C T S
+===================================================== */
+.media-info{
+    width: 300px;
+    margin-left: 20px;
+}
+
+.media-info li{
+    list-style: none;
+    font-size: 1.4em;
+}
+
+.media-info li:not(:last-child){
+    margin-bottom: 50px;
+}
+
+
+
+
+/* ---------------PROJECTS COMPONENTS------------------- */   
+#locations{
+    width: 100%;
+    height: auto;
+    padding: 60px 12%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}
+
+.locations-main .locations-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+/* -------PROJECT CARDS---------- */
+.img-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.locations-container .img-card img{
+    width: 100%;
+    height: 90%;
+    border-radius: 4px;
+}
+
+/* -----PROJECT ON HOVER DESCRIPTION------- */
+.img-card .desc{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top:0;
+    left: 0;
+    background-color: rgba(138, 98, 71, 1);
+    display: grid;
+    place-items: center;
+    color: #F4F1E8;
+    border-radius: 4px;
+    opacity: 0;
+    transition: all .3s ease-out;
+    font-size: 1.30rem;
+}
+.img-card:hover .desc{
+    opacity: .9;
+    top: 0;
+}
