@@ -5,7 +5,7 @@ function SendMail(){
         from_name : document.getElementById("name").value,
         phone_number : document.getElementById("phone_no").value,
         message : document.getElementById("message").value,
-        email_ad : document.getElementById("email_ad").value
+        email : document.getElementById("email_ad").value
     }
     emailjs.send("service_tsb95n1","template_zh0v6xy", params);
 }
